@@ -122,3 +122,20 @@ header {
 .code_example p {
   font-size: 1.2em;
 }
+.courses {
+  margin-top: 20px;
+}
+.courses_menu {
+  list-style-type: style;
+  margin-left: 20px;
+}
+.courses_menu_item {
+  margin-bottom: 5px;
+}
+.courses_menu_item_link {
+  text-decoration: underline;
+}
+.courses_menu_item_link:hover {
+  color: #339933;
+  text-decoration: none;
+}
