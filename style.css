@@ -97,3 +97,28 @@ header {
   margin-left: 10px;
   line-height: 1.7;
 }
+.skils {
+  padding: 40px 0;
+  max-width: 100%;
+  /* margin-left: 20px; */
+}
+.skils_menu {
+  list-style: disc;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.skils_menu_item {
+  margin-right: 50px;
+  margin-left: 20px;
+}
+.code {
+  max-width: 100%;
+}
+.code_example {
+  background-color: #798a79;
+  padding: 20px 10px;
+}
+.code_example p {
+  font-size: 1.2em;
+}
