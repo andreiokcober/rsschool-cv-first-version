@@ -14,7 +14,10 @@ h1 {
   font-size: 1.7em;
   margin-bottom: 10px;
 }
-
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 header {
   overflow: hidden;
   background: #292929;
@@ -138,4 +141,35 @@ header {
 .courses_menu_item_link:hover {
   color: #339933;
   text-decoration: none;
+}
+.education {
+  margin: 30px 0;
+}
+.footer {
+  background-color: #798a79;
+}
+.footer_option {
+  padding: 50px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_option div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rs_school_logo {
+  height: 60px;
+  width: 100px;
+  color: #ffffff;
+  display: block;
+}
+.year a {
+  font-size: 1.7em;
+}
+.year a:hover {
+  color: #339933;
+}
+.github a {
+  font-size: 1.2em;
 }
