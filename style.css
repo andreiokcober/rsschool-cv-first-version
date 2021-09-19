@@ -7,6 +7,7 @@
   box-sizing: border-box;
   line-height: 1.3;
 }
+
 a {
   text-decoration: none;
 }
@@ -14,30 +15,43 @@ h1 {
   font-size: 1.7em;
   margin-bottom: 10px;
 }
+h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
 .container {
   max-width: 1000px;
   margin: 0 auto;
 }
 header {
+  background: #292929;
+  overflow: hidden;
+}
+.header {
+  max-width: 1000px;
+  margin: 0 auto;
   overflow: hidden;
   background: #292929;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 0px 10px;
 }
 .logo {
-  margin-right: 100px;
   height: 60px;
   width: 100px;
   color: #ffffff;
   display: block;
 }
-
+.foto {
+  flex-grow: 1;
+}
 .menu {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
 }
 .menu__link {
   text-decoration: none;
@@ -58,9 +72,11 @@ header {
 }
 .About_me {
   display: flex;
-  justify-content: center;
-
+  flex-wrap: wrap;
   max-width: 100%;
+}
+.About_me_information {
+  max-width: 65%;
 }
 .contacts {
   margin-top: 10px;
@@ -69,13 +85,13 @@ header {
   max-width: 300px;
   max-height: 300px;
   border-radius: 20px;
-  margin-right: 50px;
 }
 .contacts_link {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   list-style: none;
+  flex-wrap: wrap;
 }
 .contact {
   margin-right: 15px;
@@ -109,17 +125,19 @@ header {
   list-style: disc;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .skils_menu_item {
   margin-right: 50px;
+  margin-bottom: 10px;
   margin-left: 20px;
 }
 .code {
   max-width: 100%;
 }
 .code_example {
-  background-color: #798a79;
+  background-color: #151d15;
   padding: 20px 10px;
 }
 .code_example p {
@@ -149,7 +167,7 @@ header {
   background-color: #798a79;
 }
 .footer_option {
-  padding: 50px 50px;
+  padding: 30px 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -172,4 +190,95 @@ header {
 }
 .github a {
   font-size: 1.2em;
+}
+.portfolio {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  overflow: hidden;
+  flex-direction: row;
+  margin-top: 10px;
+}
+.portfolio_logo {
+  min-width: 300px;
+  max-width: 300px;
+  border-radius: 10px;
+  display: block;
+}
+.portfolio_main {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+.portfolio_left {
+  margin-right: 2%;
+  display: flex;
+  margin-bottom: 5%;
+}
+.portfolio_left:hover .portfolio_img_figcaption {
+  color: #339933;
+  font-size: 1.3em;
+  transition: all 0.5s ease-out;
+}
+.portfolio_left:hover .portfolio_logo {
+  max-width: 320px;
+  transition: all 0.5s ease-out;
+}
+.Portfolio_right {
+  flex-basis: 50%;
+}
+.portfolio_img_figcaption {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+@media screen and (max-width: 900px) {
+  .About_me {
+    justify-content: center;
+  }
+  .foto {
+    flex-grow: 0;
+  }
+  .About_me_information {
+    text-align: center;
+    max-width: 40%;
+  }
+  .main-conteiner {
+    border-radius: 0;
+    border-left: 0;
+  }
+  .contacts_link {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .menu__link {
+    padding: 20px 20px;
+  }
+  .contacts_link {
+    display: block;
+  }
+
+  .About_me_information {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+/* @media screen and (max-width: 700px) {
+  .portfolio_logo {
+    max-width: 500px;
+  }
+  .portfolio_left:hover .portfolio_logo {
+    transition: none;
+    flex-basis: 60%;
+  }
+} */
+
+@media screen and (max-width: 370px) {
+  .skils_menu {
+    flex-direction: column;
+  }
 }
