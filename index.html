@@ -10,22 +10,26 @@
   </head>
   <body>
     <header>
-      <a href="https://rs.school/"
-        ><img class="logo" src="./images/rs_school.svg" alt="Логотип"
-      /></a>
-      <nav>
-        <ul class="menu">
-          <li><a class="menu__link" href="">Contacts</a></li>
-          <li><a class="menu__link" href="">Skils</a></li>
-          <li><a class="menu__link" href="">Code example</a></li>
-          <li><a class="menu__link" href="">Courses</a></li>
-          <li><a class="menu__link" href="">Education</a></li>
-          <li><a class="menu__link" href="">Portfolio</a></li>
-        </ul>
-      </nav>
+      <div class="header">
+        <div class="logotip">
+          <a href="https://rs.school/"
+            ><img class="logo" src="./images/rs_school.svg" alt="Логотип"
+          /></a>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a class="menu__link" href="#contaсts">Contacts</a></li>
+            <li><a class="menu__link" href="#skils">Skils</a></li>
+            <li><a class="menu__link" href="#code">Code</a></li>
+            <li><a class="menu__link" href="#courses">Courses</a></li>
+            <li><a class="menu__link" href="#education">Education</a></li>
+            <li><a class="menu__link" href="#portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-conteiner">
-      <section class="About_me">
+      <div class="About_me">
         <div class="foto">
           <img class="foto_logo" src="./images/avatar.png" alt="Моя аватарка" />
         </div>
@@ -37,7 +41,7 @@
             a goal to successfully complete the courses.
           </p>
           <section class="contacts">
-            <h1>Contacts</h1>
+            <h2 id="contaсts">Contacts</h2>
             <ul class="contacts_link">
               <li class="contact">
                 <a class="contact_icon" href=""
@@ -60,9 +64,9 @@
             </ul>
           </section>
         </section>
-      </section>
+      </div>
       <section class="skils">
-        <h1>Skills</h1>
+        <h2 id="skils">Skills</h2>
         <ul class="skils_menu">
           <li class="skils_menu_item">Git</li>
           <li class="skils_menu_item">GitHub</li>
@@ -74,7 +78,7 @@
         </ul>
       </section>
       <section class="code">
-        <h1>Code example</h1>
+        <h2 id="code">Code</h2>
         <div class="code_example">
           <p>
             function numbers(n) { <br />
@@ -89,7 +93,7 @@
         </div>
       </section>
       <section class="courses">
-        <h1>Courses</h1>
+        <h2 id="courses">Courses</h2>
         <ul class="courses_menu">
           <li class="courses_menu_item">
             <a
@@ -109,16 +113,75 @@
         </ul>
       </section>
       <section class="education">
-        <a name="education"></a>
-        <h1>Education</h1>
+        <h2 id="education">Education</h2>
         <p>
           University: Belarusian State University of Informatics and
           Radioelectronics,Faculty of infocommunications(2014-2019).
         </p>
       </section>
       <section class="english">
-        <h1>English</h1>
+        <h2>English</h2>
         <p>A2</p>
+      </section>
+      <section class="portfolio">
+        <h2 id="portfolio">Portfolio</h2>
+        <div class="portfolio_main">
+          <div class="portfolio_left">
+            <figure>
+              <a target="_blank" href="https://andreiokcober.github.io/Venom-2/"
+                ><img
+                  class="portfolio_logo"
+                  src="./images/venom.png"
+                  alt="venom"
+              /></a>
+              <figcaption class="portfolio_img_figcaption">
+                Trailer Venom-2
+              </figcaption>
+            </figure>
+          </div>
+          <div class="Portfolio_right">
+            <p>
+              Трейлер-визитка к премьере кинофильма Веном-2. Адаптивная верстка
+              под все устройства. Используемые инструменты : HTML, CSS ,
+              JavaScript
+            </p>
+          </div>
+        </div>
+        <div class="portfolio_main">
+          <div class="portfolio_left">
+            <figure>
+              <a target="_blank" href="https://andreiokcober.github.io/Blogin/"
+                ><img
+                  class="portfolio_logo"
+                  src="./images/Blogin.png"
+                  alt="venom"
+              /></a>
+              <figcaption class="portfolio_img_figcaption">Blogin</figcaption>
+            </figure>
+          </div>
+          <div class="Portfolio_right">
+            <p>Верстка макета Blogin. Используемые инструменты : HTML, CSS</p>
+          </div>
+        </div>
+        <div class="portfolio_main">
+          <div class="portfolio_left">
+            <figure>
+              <a target="_blank" href="https://andreiokcober.github.io/Biruang/"
+                ><img
+                  class="portfolio_logo"
+                  src="./images/Biruang.png"
+                  alt="venom"
+              /></a>
+              <figcaption class="portfolio_img_figcaption">Biruang</figcaption>
+            </figure>
+          </div>
+          <div class="Portfolio_right">
+            <p>
+              Верстка макета Biruang. Используемые инструменты : HTML, CSS ,
+              JavaScript
+            </p>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -140,5 +203,6 @@
         </div>
       </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
