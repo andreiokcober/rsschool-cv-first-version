@@ -8,16 +8,17 @@
 
 ## About me
 
-I am 24 years old.
+I am 26 years old.
 I love to develop and strive for the best.
 I set a goal to successfully complete the courses.
 
 ## Skills
 
+- React (Basic)
 - Git
 - GitHub
 - Figma
-- JavaScript (Basic)
+- JavaScript
 - Html
 - Css(less/Sass)
 - webpack
@@ -29,7 +30,6 @@ function numbers(n) {
   if (n.length >= 2) {
     const sum = n.reduce((total, amount) => total + amount);
     return sum;
-  } else {
   }
 }
 const andrei = numbers([1, 2, 3, 4]);
