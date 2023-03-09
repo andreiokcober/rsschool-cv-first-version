@@ -1,1 +1,1 @@
-https://andreiokcober.github.io/rsschool-cv/
+https://andreiokcober.github.io/rsschool-cv-first-version/
